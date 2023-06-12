@@ -1,0 +1,120 @@
+.wrapper {
+  &__navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &-menu {
+      &.center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and(max-width: $br-md) {
+          position: initial;
+          left: initial;
+          top: initial;
+          transform: initial;
+        }
+      }
+      ul {
+        li {
+          margin: 0 15px;
+          @media screen and(max-width: $br-md) {
+            margin: 0;
+          }
+
+          .dropdown-menu {
+            padding: 0;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px transparentize(color("black"), 0.9) !important;
+            overflow: hidden;
+
+            .dropdown-item {
+              padding: 0.8rem 1rem;
+            }
+          }
+
+          a {
+            position: relative;
+
+            &.active {
+              opacity: 1;
+              color: color("black") !important;
+              &::after {
+                opacity: 1;
+              }
+            }
+
+            &:hover {
+              color: color("black") !important;
+
+              &::after {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  outline-style: none;
+  span {
+    width: 100%;
+    height: 2px;
+    background-color: color("black");
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: 0.5s;
+
+    &:nth-child(1) {
+    }
+    &:nth-child(2) {
+      width: 80%;
+    }
+    &:nth-child(3) {
+      width: 60%;
+      margin-bottom: 0;
+    }
+  }
+
+  &:active {
+    outline-style: none;
+  }
+  &:hover {
+    outline-style: none;
+  }
+  &:focus {
+    outline-style: none;
+  }
+
+  &[aria-expanded="true"] {
+    span {
+      &:nth-child(1) {
+        position: absolute;
+        transform: rotate(45deg);
+        margin-bottom: 0;
+      }
+      &:nth-child(2) {
+        display: none;
+        margin-bottom: 0;
+      }
+      &:nth-child(3) {
+        width: 100%;
+        position: absolute;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
