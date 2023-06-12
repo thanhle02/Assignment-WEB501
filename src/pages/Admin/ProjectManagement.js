@@ -65,7 +65,7 @@ const ProjectManagementPage = () => {
                     <td>${project.price}</td>
                     <td>${project.description}</td>
                     <td class="m-1.5">
-                        <button class="btn-remove" onclick="confirmDelete("xác nhận xóa")" data-id="${project.id}">Delete</button>
+                        <button class="btn-remove"  data-id="${project.id}">Delete</button>
                         <a href="/admin/project/update/${project.id}"><button class="btn btn-primary">Update</button></a>
                     </td>
                 </tr>

@@ -32,6 +32,7 @@ const UpdateProjectPage = ({ id }) => {
            
 
             update(newData).then(() => { router.navigate("/admin/project") })
+            
         })
     })
     return `

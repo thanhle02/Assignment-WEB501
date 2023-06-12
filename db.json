@@ -1,39 +1,25 @@
 {
   "projectList": [
     {
-      "id": 6,
-      "title": "Máy tính xách tay",
-      "img": "https://vn-live-01.slatic.net/p/da0d89d00d62a29404e571c010e25124.jpg",
-      "price": "300$",
-      "description": "mẫu đang hót nhất và được săn đón vào năm 2023"
-    },
-    {
-      "id": 7,
-      "title": "máy tính 1",
-      "img": "https://picsum.photos/id/1/200",
-      "price": "170000đ",
-      "description": "đẹp"
-    },
-    {
-      "id": 8,
-      "title": "máy tính 2",
-      "img": "https://bizweb.dktcdn.net/100/362/971/products/91-95e0945c-cea4-4338-bb17-e3714ba8e127.jpg?v=1685103194760",
-      "price": "160000đ",
-      "description": "nhỏ gọn"
-    },
-    {
-      "title": "máy tính 3",
-      "img": "https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/e/text_d_i_19.png",
-      "price": "180000đ",
-      "description": "hì",
-      "id": 9
-    },
-    {
-      "title": "máy tính 4",
+      "title": "ảnh 1",
       "img": "https://picsum.photos/200",
-      "price": "222222",
-      "description": "hì hì",
-      "id": 10
+      "price": "1",
+      "description": "hihi",
+      "id": 1
+    },
+    {
+      "title": "ảnh 2",
+      "img": "https://picsum.photos/200",
+      "price": "2",
+      "description": "ggggg",
+      "id": 2
+    },
+    {
+      "title": "ảnh 3",
+      "img": "https://picsum.photos/200",
+      "price": "3",
+      "description": "lllllllllll",
+      "id": 3
     }
   ],
   "users": [
